@@ -1,0 +1,39 @@
+.circle_1 {
+  position: absolute;
+  top: 160px;
+  background-color: rgb(127, 148, 255);
+}
+.circle_2 {
+  margin-top: 120px;
+  background-color: rgb(130, 212, 209);
+}
+
+.animate_1 {
+  animation: move_1 20s linear infinite;
+}
+.animate_2 {
+  animation: move_2 20s linear infinite;
+}
+
+@keyframes move_1 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100vw - 100px);
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes move_2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(100vw - 100px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
