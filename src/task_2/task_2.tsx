@@ -26,7 +26,7 @@ const Task_2: FC = () => {
   return (
     <section>
       <h2>
-        При изменении стейта count в компоненте App дочерние компоненты Button не должны
+        При изменении стейта count в компоненте Task_2 дочерние компоненты Button не должны
         ререндериться
       </h2>
       <div className="container">

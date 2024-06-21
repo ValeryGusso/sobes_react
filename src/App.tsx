@@ -38,6 +38,10 @@ const App: FC = () => {
       <main>
         <Routes>
           <Route
+            path="/"
+            element={<></>}
+          />
+          <Route
             path="/task_1"
             element={<Task_1 />}
           />
