@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './style/animations.css';
+import '../task_3_solution/animations.css';
 
 const Task_3: FC = () => {
   /* Блокирование основного потока на 5сек */
@@ -12,8 +12,8 @@ const Task_3: FC = () => {
     <section>
       <h1 className="warning">ВАЖНО!!!</h1>
       <h2>
-        Нельзя открывать файл "./style/animations.css", пользоваться инспектором кода и дев.тулзами
-        до того, как задание будет выполнено
+        Нельзя открывать файл "src/task_3_solution/animations.css", пользоваться инспектором кода и
+        дев.тулзами до того, как задание будет выполнено
       </h2>
       <div className="container">
         <div className="wrapper">

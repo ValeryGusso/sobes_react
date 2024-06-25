@@ -63,22 +63,37 @@ const Task_1: FC = () => {
           </div>
           <div className="text-wrapper">
             <h3>1в: Написать функцию "compareFloat" для сравнения двух дробных чисел</h3>
-            <p>0.1 + 0.2 === 0.3 // {JSON.stringify(compareFloat(0.1 + 0.2, 0.3))}</p>
-            <p>0.1 + 0.2 === 0.4 // {JSON.stringify(compareFloat(0.1 + 0.2, 0.4))}</p>
-            <p>
+            <p className={compareFloat(0.1 + 0.2, 0.3) ? 'correct' : 'wrong'}>
+              0.1 + 0.2 === 0.3 // {JSON.stringify(compareFloat(0.1 + 0.2, 0.3))}
+            </p>
+            <p className={compareFloat(0.1 + 0.2, 0.300004) ? 'wrong' : 'correct'}>
+              0.1 + 0.2 === 0.300004 // {JSON.stringify(compareFloat(0.1 + 0.2, 0.300004))}
+            </p>
+            <p className={compareFloat(0.1 + 0.2, 0.30000000000000004) ? 'correct' : 'wrong'}>
               0.1 + 0.2 === 0.30000000000000004 //{' '}
               {JSON.stringify(compareFloat(0.1 + 0.2, 0.30000000000000004))}
             </p>
             <br />
-            <p>1 - 0.8 === 0.2 // {JSON.stringify(compareFloat(1 - 0.8, 0.2))}</p>
-            <p>1 - 0.8 === 0.3 // {JSON.stringify(compareFloat(1 - 0.8, 0.3))}</p>
-            <p>
+            <p className={compareFloat(1 - 0.8, 0.2) ? 'correct' : 'wrong'}>
+              1 - 0.8 === 0.2 // {JSON.stringify(compareFloat(1 - 0.8, 0.2))}
+            </p>
+            <p className={compareFloat(1 - 0.8, 0.199996) ? 'wrong' : 'correct'}>
+              1 - 0.8 === 0.199996 // {JSON.stringify(compareFloat(1 - 0.8, 0.199996))}
+            </p>
+            <p className={compareFloat(1 - 0.8, 0.19999999999999996) ? 'correct' : 'wrong'}>
               1 - 0.8 === 0.19999999999999996 //{' '}
               {JSON.stringify(compareFloat(1 - 0.8, 0.19999999999999996))}
             </p>
             <br />
-            <p>0.2 + 0.5 === 0.7 // {JSON.stringify(compareFloat(0.2 + 0.5, 0.7))}</p>
-            <p>0.8 - 0.5 === 0.3 // {JSON.stringify(compareFloat(0.8 - 0.5, 0.3))}</p>
+            <p className={compareFloat(0.5 - 0.8, -0.3) ? 'correct' : 'wrong'}>
+              0.5 - 0.8 === -0.3 // {JSON.stringify(compareFloat(0.5 - 0.8, -0.3))}
+            </p>
+            <p className={compareFloat(0.7 - 0.9, -0.2) ? 'correct' : 'wrong'}>
+              0.7 - 0.9 === -0.2 // {JSON.stringify(compareFloat(0.7 - 0.9, -0.2))}
+            </p>
+            <p className={compareFloat(-0.1 - 0.2, -0.3) ? 'correct' : 'wrong'}>
+              -0.1 - 0.2 === -0.3 // {JSON.stringify(compareFloat(-0.1 - 0.2, -0.3))}
+            </p>
           </div>
         </div>
       </div>
